@@ -11,7 +11,7 @@ function Detail() {
   const getMovie = async () => {
     const json = await (
       await fetch(
-        `http://www.kobis.or.kr/kobisopenapi/webservice/rest/movie/searchMovieInfo?key=${API_KEY}&movieCd=${id}`
+        `https://www.kobis.or.kr/kobisopenapi/webservice/rest/movie/searchMovieInfo?key=${API_KEY}&movieCd=${id}`
       )
     ).json();
     setMovie(json.movieInfoResult.movieInfo);
